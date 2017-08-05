@@ -6,8 +6,8 @@ You can add this repository to your package manager by running the following
 command in your msys2 terminal:
 
 ```
-if `cat /etc/pacman.conf | grep "axia-sw" > /dev/null 2>&1`; then
-  sudo printf '[axia-sw]\nServer = https://github.com/axia-sw/msys2-packages/releases/download/current/\nSigLevel = PackageOptional' >> /etc/pacman.conf
+if ! `cat /etc/pacman.conf | grep "axia-sw" > /dev/null 2>&1`; then
+  printf '[axia-sw]\nServer = https://github.com/axia-sw/msys2-packages/releases/download/current/\nSigLevel = PackageOptional' >> /etc/pacman.conf
 fi
 ```
 
