@@ -7,7 +7,7 @@ command in your msys2 terminal:
 
 ```
 if ! `cat /etc/pacman.conf | grep "axia-sw" > /dev/null 2>&1`; then
-  printf '[axia-sw]\nServer = https://github.com/axia-sw/msys2-packages/releases/download/current/\nSigLevel = PackageOptional' >> /etc/pacman.conf
+  printf '\n\n[axia-sw]\nServer = https://github.com/axia-sw/msys2-packages/releases/download/current/\nSigLevel = PackageOptional\n' >> /etc/pacman.conf
 fi
 ```
 
